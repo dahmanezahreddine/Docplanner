@@ -61,3 +61,21 @@ body {
   display: flex;
   flex-direction: column;
 }
+.bfordoctors {
+  background: transparent;
+  color: #ffffff;
+  border: 0;
+  text-decoration: underline;
+}
+.bforpatients {
+  background: transparent;
+  color: #ffffff;
+  border: 0;
+  text-decoration: underline;
+}
+.bforclinics {
+  background: transparent;
+  color: #ffffff;
+  border: 0;
+  text-decoration: underline;
+}
