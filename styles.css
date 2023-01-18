@@ -4,12 +4,21 @@ body {
   margin: 0;
   padding: 0;
 }
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .navbar {
   display: block;
   display: flex;
   justify-content: space-between;
   margin: 15px 10px;
-  padding: 10px 0²;
+  padding: 10px 0;
+  width: 70%;
+}
+.navbar ul li {
+  list-style: none;
 }
 .navbar ul li a:hover {
   color: #00b39b;
@@ -34,48 +43,102 @@ body {
   display: flex;
   justify-content: center;
   color: #00b39b;
+  width: 70%;
 }
 .firstp {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 70%;
 }
 
 .PDC {
   color: #ffffff;
   display: flex;
-  justify-content: space-between;
+  width: 70%;
 }
 .Forpatients {
   background-color: #00b39b;
-  display: flex;
-  flex-direction: column;
 }
 .Fordoctors {
   background-color: #3d83df;
-  display: flex;
-  flex-direction: column;
 }
 .Forclinics {
   background-color: #1b2734;
-  display: flex;
-  flex-direction: column;
 }
 .bfordoctors {
   background: transparent;
   color: #ffffff;
-  border: 0;
   text-decoration: underline;
 }
 .bforpatients {
   background: transparent;
-  color: #ffffff;
-  border: 0;
   text-decoration: underline;
+  color: rgb(255, 255, 255);
 }
 .bforclinics {
   background: transparent;
   color: #ffffff;
-  border: 0;
   text-decoration: underline;
+}
+.weare {
+  color: #00b39b;
+  display: flex;
+  align-items: center;
+}
+
+.s4 {
+  display: grid;
+  grid-template-columns: 50% 25% 25%;
+  margin-top: 25px;
+  background-color: #b1ded8;
+  justify-content: center;
+  align-items: center;
+}
+.s5 {
+  margin-top: 40px;
+  width: 70%;
+  text-align: center;
+}
+.titre-s5 {
+  color: #00b39b;
+}
+.text-s5 {
+  color: #747474;
+}
+.s6 {
+  margin: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 70%;
+}
+.barcelona {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.barcelona img {
+  margin: 0;
+  padding: 0;
+}
+.barcelona p {
+  color: #747474;
+}
+.barcelona span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 10px;
+}
+.btnbar {
+  background-color: #3d83df;
+  color: #ffffff;
+  border-radius: 6px;
+  border: none;
+  width: 120px;
+  height: 30px;
 }
