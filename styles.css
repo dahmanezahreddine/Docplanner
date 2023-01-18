@@ -88,12 +88,38 @@ body {
 }
 
 .s4 {
-  display: grid;
-  grid-template-columns: 50% 25% 25%;
-  margin-top: 25px;
+  width: 100%;
   background-color: #b1ded8;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  overflow: hidden;
+}
+.s4 section {
+  width: 50%;
+  display: grid;
+  grid-template-columns: auto 250px 250px;
+  margin-top: 25px;
   justify-content: center;
   align-items: center;
+  gap: 0 30px;
+}
+.s4 .logo-s4 {
+  transform: translate(-10%, 15%);
+}
+.s4 .logo-s4 img {
+  width: 450px;
+}
+.s4 section .box-element {
+  background-color: white;
+  border-radius: 6px;
+  text-align: center;
+  height: 250px;
+  padding: 20px;
+}
+.s4 section .box-element:nth-child(2),
+.s4 section .box-element:nth-child(5) {
+  transform: translateY(35px);
 }
 .s5 {
   margin-top: 40px;
@@ -107,6 +133,7 @@ body {
   color: #747474;
 }
 .s6 {
+  max-width: 1100px;
   margin: 50px;
   display: flex;
   flex-wrap: wrap;
