@@ -15,7 +15,7 @@ body {
   justify-content: space-between;
   margin: 15px 10px;
   padding: 10px 0;
-  width: 70%;
+  width: 65%;
 }
 .navbar ul li {
   list-style: none;
@@ -31,8 +31,7 @@ body {
   display: flex;
   text-decoration: none;
 }
-.Departments {
-  display: flex;
+.Departments a {
   text-decoration: none;
 }
 .firstlogo {
@@ -43,33 +42,62 @@ body {
   display: flex;
   justify-content: center;
   color: #00b39b;
-  width: 70%;
+  width: 65%;
 }
 .firstp {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 70%;
+  width: 65%;
 }
 
 .PDC {
+  width: 65%;
   color: #ffffff;
   display: flex;
-  width: 70%;
+  gap: 30px;
+  justify-content: space-between;
+  margin: 3%;
+  flex-wrap: wrap;
 }
 .Forpatients {
+  width: 250px;
+  height: 300px;
   background-color: #00b39b;
+  border-radius: 10px;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
 }
 .Fordoctors {
+  width: 250px;
+  height: 300px;
   background-color: #3d83df;
+  border-radius: 10px;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
 }
 .Forclinics {
+  width: 250px;
+  height: 300px;
   background-color: #1b2734;
+  border-radius: 10px;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
 }
 .bfordoctors {
   background: transparent;
   color: #ffffff;
   text-decoration: underline;
+  justify-self: flex-end;
 }
 .bforpatients {
   background: transparent;
@@ -123,7 +151,7 @@ body {
 }
 .s5 {
   margin-top: 40px;
-  width: 70%;
+  width: 65%;
   text-align: center;
 }
 .titre-s5 {
@@ -138,7 +166,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 70%;
+  width: 65%;
 }
 .barcelona {
   display: flex;
@@ -168,4 +196,30 @@ body {
   border: none;
   width: 120px;
   height: 30px;
+}
+
+.dropdown {
+  background-color: #ffffff;
+  color: #747474;
+  border: #c8c6c6 solid 1px;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  width: 180px;
+  box-shadow: 0px 8px 8px 8px rgba(203, 203, 203, 1);
+  -webkit-box-shadow: 0px 8px 8px 8px rgba(203, 203, 203, 1);
+  -moz-box-shadow: 0px 8px 8px 8px rgba(203, 203, 203, 1);
+  display: none;
+  position: absolute;
+}
+.dropdown li {
+  padding: 12px 10px;
+}
+.dropdown li:hover {
+  color: #00b39b;
+  background-color: #ebe9e9;
+  cursor: pointer;
+}
+.Departments:hover .dropdown {
+  display: block;
 }
