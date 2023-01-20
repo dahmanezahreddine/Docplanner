@@ -3,6 +3,7 @@ body {
   background-color: #ffffff;
   margin: 0;
   padding: 0;
+  margin-top: 50px;
 }
 body {
   display: flex;
@@ -13,9 +14,14 @@ body {
   display: block;
   display: flex;
   justify-content: space-between;
-  margin: 15px 10px;
-  padding: 10px 0;
-  width: 65%;
+  flex-wrap: wrap;
+  padding: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  z-index: 10;
 }
 
 .menu {
@@ -55,6 +61,7 @@ body {
   justify-content: center;
   color: #00b39b;
   width: 65%;
+  text-align: center;
 }
 .firstp {
   display: flex;
@@ -156,6 +163,7 @@ body {
   text-align: center;
   height: 250px;
   padding: 20px;
+  z-index: 1;
 }
 .s4 section .box-element:nth-child(2),
 .s4 section .box-element:nth-child(5) {
@@ -223,6 +231,7 @@ body {
   -moz-box-shadow: 0px 8px 8px 8px rgba(203, 203, 203, 1);
   display: none;
   position: absolute;
+  right: 0;
 }
 .dropdown li {
   padding: 12px 10px;
@@ -257,4 +266,36 @@ body {
 }
 .s3-logo svg:hover {
   fill: #00b39b;
+}
+/* responsive design 480px */
+@media screen and (max-width: 480px) {
+  .firstp {
+    display: flex;
+    flex-direction: column;
+  }
+  .s3 {
+    grid-template-columns: 100%;
+  }
+  .s3-logo {
+    padding-left: 0;
+  }
+  .s4 section {
+    width: 90%;
+  }
+  .s4 section .box-element {
+    height: auto;
+  }
+}
+/* responsive design 768px */
+@media screen and (max-width: 768px) {
+  .s4 section {
+    grid-template-columns: 100%;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  .logo-s4 {
+    position: absolute;
+    bottom: 0;
+    right: 20%;
+  }
 }
