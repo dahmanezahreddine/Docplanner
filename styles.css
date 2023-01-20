@@ -17,6 +17,18 @@ body {
   padding: 10px 0;
   width: 65%;
 }
+
+.menu {
+  display: flex;
+}
+
+.menu li {
+  list-style: none;
+}
+.menu ul {
+  padding-left: 20px;
+}
+
 .navbar ul li {
   list-style: none;
 }
@@ -222,4 +234,27 @@ body {
 }
 .Departments:hover .dropdown {
   display: block;
+}
+
+.s3 {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  color: #00b39b;
+  max-width: 65%;
+}
+
+.s3-logo {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 25px;
+}
+.s3-logo svg,
+.s3-logo img {
+  width: auto;
+  height: 20px;
+  fill: #747474;
+}
+.s3-logo svg:hover {
+  fill: #00b39b;
 }
